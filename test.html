@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="test.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header> 
+        The Online Library
+        <button id="addBtn">Add Book</button>
+    </header>
+    <p class="ReadingBooks"> Reading Books </p>
+    <div class="main"></div>
+
+    <div class="delForm">
+        <dialog id="delBook">
+            <form id="delForm">
+                <p>Do you want to delete this book?</p>
+            </form>
+            <div class="button">
+                <button id="confirmDel">Ok</button>
+                <button id="cancelDel">Cancel</button>
+            </div>
+        </dialog>
+    </div>
+
+
+    <div class="addForm">
+        <dialog id="AddingBook">
+            <form id="AddingForm">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" required>
+                <label for="pages">Pages</label>
+                <input type="number" id="pages" name="pages" required>
+                <label for="read">Have you read this book?</label>
+                <input type="checkbox" id="read" name="read">
+                <div class="button">
+                    <button id="cancelBtn">Cancel</button>
+                    <button id="submitBtn">Confirm</button>
+                </div>
+            </form>
+        </dialog>
+    </div>
+</body>
+</html>
